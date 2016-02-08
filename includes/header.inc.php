@@ -22,7 +22,12 @@
         <h1>Content Site<span>Home to lots of great content!</span></h1>
         <nav>
             <ul>
-                <li><a href="index.php">Home</a></li><li><a href="#">Archives</a></li><li><a href="contact.php">Contact</a></li><li><?php if ($user) { echo '<a href="logout.php">Logout</a>'; } else { echo '<a href="login.php">Login</a>'; } ?></li><li><a href="#">Register</a></li>
+                <li><a href="index.php">Home</a></li>
+				<li><a href="archive.php">Archives</a></li> 
+				<!-- <li><a href="contact.php">Contact</a></li> -->
+				<li><?php if ($user) { echo '<a href="logout.php">Logout</a>'; } else { echo '<a href="login.php">Login</a>'; } ?></li>
+				<li><?php if ($user && $user->canCreatePage()) echo '<li><a href="add_page.php">Add a New Page</a></li>'; ?></li>
+				<!-- <li><a href="#">Register</a></li> -->
             </ul>
         </nav>
     </header>

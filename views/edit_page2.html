@@ -1,0 +1,14 @@
+<section class="fullWidth">
+    <article>
+        <!-- <h1><?php //echo $page->getTitle(); ?></h1>
+        <?php //echo $page->getContent(); ?> -->
+
+	<form method = "post" action = "edit_page2.php">
+		Title: <input type = "text" name = "title" id = "title" value = "<?php echo $page->getTitle(); ?>">
+		Content: <textarea rows = "15" cols = "30" name = "content" id = "content"><?php echo $page->getContent(); ?></textarea>
+		<input type = "hidden" name = "id" value = "<?php echo $_GET['id'];?>">
+		<input type="submit" name="submit" value="Update">
+	</form> 
+        
+    </article>
+</section>

@@ -1,0 +1,12 @@
+<!-- # archive.html  -->
+<section class="threeColumns">
+<?php // Fetch the results and display them:
+while ($page = $r->fetch()) {
+    echo "<article>
+    <p><em>{$page->getDateAdded()}</em>&nbsp{$page->getTitle()}</p>
+    <p><a href=\"page.php?id={$page->getId()}\">read more here...</a></p>
+    </article>
+    ";
+}
+?>
+</section>

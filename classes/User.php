@@ -25,7 +25,11 @@ class User {
     function getId() {
         return $this->id;
     }
-    
+    // Method returns the user type:
+	function getUserType() {
+		return $this->userType;
+	}
+	
     // Method returns a Boolean if the user is an administrator:
     function isAdmin() {
         return ($this->userType == 'admin');
