@@ -15,3 +15,4 @@ username: admin@example.com
 password: adminPass
 
 When logged in as public the user can only view pages. When logged in as author the user can create a new page and can potentially edit pages the author has created. When logged in as admin the user can add new pages and edit (this function not completed yet) any pages.
+The 'add a new page' option is only available when the user is logged in as an author or admin
