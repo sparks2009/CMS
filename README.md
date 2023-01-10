@@ -1,7 +1,7 @@
 # CMS
 A Content Management System with users who can login and create and view pages of content built using a light MVC approach.
 
-The CMS can be viewed <a href="http://markonesolutions.com/CMS/index.php">here</a>
+<!--The CMS can be viewed <a href="http://markonesolutions.com/CMS/index.php">here</a> -->
 
 There are three login types, public, author and admin the usernames and passwords to login are as follows:
 
